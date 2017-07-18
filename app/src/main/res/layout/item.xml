@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+
+    android:clipToPadding="false"
+    android:outlineProvider="bounds"
+    android:elevation="6dp"
+    android:layout_margin="4dp"
+    android:orientation="horizontal">
+    <CheckBox
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="-5dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="70dp"
+        >
+
+        <ImageView
+            android:id="@+id/image_circle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/bus"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+
+
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+
+            android:layout_alignParentTop="true"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/image_circle"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+
+            tools:text="Cristopher "/>
+
+        <TextView
+            android:id="@+id/text_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_circle"
+            android:layout_below="@id/text_title"
+            android:textColor="@color/soft_grey"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:text="test test"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:lineSpacingExtra="2dp"
+            />
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp"
+            android:layout_alignBottom="@id/text_message"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/heart_full"
+            android:tint="@color/bleu1"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0.4dp"
+            android:background="@color/soft_grey"
+            android:layout_marginLeft="65dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/element"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:src="@drawable/prem_ctm"
+
+            android:textColor="@color/bleuDarkCTM" />
+
+        <com.lbes.application.Widgets.AutoResizeTextView
+            android:layout_weight="1"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:textSize="16sp"
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:textColor="@color/bleu01"
+            android:layout_height="wrap_content"
+            android:text=""/>
+        <ImageView
+            android:id="@+id/save_clothes"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_marginLeft="8dp"
+
+            android:paddingRight="3dp"
+            android:paddingLeft="3dp"
+            android:paddingBottom="0dp"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:tint="@color/red"
+            android:src="@drawable/heart"/>
+
+    </LinearLayout>-->

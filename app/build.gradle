@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+
+
+android {
+
+    useLibrary 'org.apache.http.legacy'
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+    dexOptions
+            {
+                incremental false
+                javaMaxHeapSize "2048M"
+                preDexLibraries = false
+            }
+
+
+    signingConfigs {
+        releaseconfig {
+            keyAlias 'release_key'
+            keyPassword 'nizar++.00'
+            storeFile file('/home/nizar/AndroidStudioProjects/CTM/app/release.keystore')
+            storePassword 'nizar++.00'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.stanly.ram"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile files('libs/httpmime-4.1.1.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.jsoup:jsoup:1.9.2'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.google.firebase:firebase-messaging:11.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.17'
+    compile 'com.google.android.gms:play-services-ads:11.0.1'
+    compile files('libs/coverflowlibrary.jar')
+}
+// Add to the bottom of the file
+apply plugin: 'com.google.gms.google-services'

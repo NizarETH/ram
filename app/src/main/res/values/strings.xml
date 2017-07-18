@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">RAM</string>
+    <string name="english">English</string>
+    <string name="russian">Russe</string>
+    <string name="spanish">Espagne</string>
+    <string name="french">Français</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

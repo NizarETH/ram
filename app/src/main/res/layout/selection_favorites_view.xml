@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/white"
+                android:elevation="4dp"
+                  >
+
+            <ImageView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+
+                  android:layout_marginBottom="10dp"
+                android:tint="@color/bleuDarkCTM"
+                android:src="@drawable/logo_ctm_trans"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/open_home"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                >
+                <com.stanly.ram.Widgets.ArrowImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:tint="@color/bleuDarkCTM"
+                    android:src="@drawable/home"
+
+                    />
+                <com.stanly.ram.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleuDarkCTM"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Home"
+                    android:maxLines="2"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/bleuDarkCTM"/>
+ <LinearLayout
+                android:id="@+id/open_agenda"
+                android:layout_width="match_parent"
+
+
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                >
+                <com.stanly.ram.Widgets.ArrowImageView
+
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:tint="@color/bleuDarkCTM"
+                    android:src="@drawable/agenda"
+
+                    />
+                <com.stanly.ram.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleuDarkCTM"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Agenda"
+                    android:maxLines="2"
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+               android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/bleuDarkCTM"/>
+
+            <LinearLayout
+                android:id="@+id/open_time"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                >
+                <com.stanly.ram.Widgets.ArrowImageView
+
+                    android:layout_width="25dp"
+                   android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:tint="@color/bleuDarkCTM"
+                    android:src="@drawable/clock"
+
+                    />
+                <com.stanly.ram.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleuDarkCTM"
+                    android:ellipsize="marquee"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center"
+                    android:text="Horaires"
+                    android:maxLines="2"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+             <View
+                 android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                  android:layout_marginLeft="55dp"
+                 android:background="@color/bleuDarkCTM"/>
+            <LinearLayout
+                android:id="@+id/open_services"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+
+                >
+                <com.stanly.ram.Widgets.ArrowImageView
+
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:tint="@color/bleuDarkCTM"
+                    android:src="@drawable/services"
+
+                    />
+                <com.stanly.ram.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleuDarkCTM"
+                    android:ellipsize="marquee"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Services"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="55dp"
+                android:background="@color/bleuDarkCTM"/>
+
+            <LinearLayout
+                android:id="@+id/open_settings"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+
+                >
+                <com.stanly.ram.Widgets.ArrowImageView
+
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+
+                    android:layout_gravity="center"
+
+                    android:tint="@color/bleuDarkCTM"
+                    android:src="@drawable/sett"
+
+                    />
+                <com.stanly.ram.Widgets.AutoResizeTextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleuDarkCTM"
+                    android:ellipsize="marquee"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Paramètres"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp"/>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                 android:layout_marginLeft="55dp"
+                android:background="@color/bleuDarkCTM"/>
+            <LinearLayout
+                android:id="@+id/open_contact"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                >
+                <com.stanly.ram.Widgets.ArrowImageView
+
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+
+
+                    android:layout_gravity="center"
+
+                    android:tint="@color/bleuDarkCTM"
+                    android:src="@drawable/tel"
+
+                    />
+                <com.stanly.ram.Widgets.AutoResizeTextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/bleuDarkCTM"
+                    android:ellipsize="marquee"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="Contact"
+                    android:maxLines="2"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                 android:layout_marginLeft="55dp"
+                android:background="@color/bleuDarkCTM"/>
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>

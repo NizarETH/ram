@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/bleuDarkCTM"
+        android:text="Services"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/bleuDarkCTM"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/bleuCTM1"
+                android:textSize="13sp"
+                android:text="Lignes nationales et internationales"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/particulier_0"/>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+
+                    android:textColor="@color/soft_grey"
+                    android:text="Vous souhaitez voyager au Maroc ou en Europe?  CTM dessert pour vous plus de 130 destinations. Découvrez nos offres et destinations et embarquez à bord de nos autocars d’exception!"/>
+            </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/bleuCTM1"
+                android:textSize="13sp"
+                android:text="Location d'autocar"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/location_autocar"/>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:padding="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="12sp"
+                        android:textColor="@color/soft_grey"
+                        android:text="Vous souhaitez organiser des voyages de groupe ou des circuits inter villes?
+CTM vous offre des prestations d’exception en mettant à votre disposition des autocars avec leur chauffeur.
+Pour plus d’informations, remplissez le formulaire de demande d’informations. Nous reviendrons vers vous dans les plus brefs délais!"/>
+
+                </android.support.v4.widget.NestedScrollView>
+               </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/bleuCTM1"
+                android:textSize="13sp"
+                android:text="Envoi de colis"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+                <ImageView
+                    android:padding="5dp"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/envoi_coli"/>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"
+
+                    android:textColor="@color/soft_grey"
+                    android:text="Vous souhaitez envoyer des colis à votre famille ou à vos proches?
+
+CTM a conçu pour vous des services de messagerie adaptés à vos besoins avec une gestion optimale des séquences de transport.
+
+Quelle que soit la taille ou le poids de votre colis, CTM vous proposera la solution la mieux adaptée.
+
+Pour en savoir +, suivez ce lien: http://www.ctm-messagerie.ma/no-services-particuliers.ctm"/>
+            </android.support.v4.widget.NestedScrollView>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/open_ctm_site"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="2.5dp"
+                android:textSize="12sp"
+                android:text="Pour plus d'info, rendez-vous à http://www.ctm.ma"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

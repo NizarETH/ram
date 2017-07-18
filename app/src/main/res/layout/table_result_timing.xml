@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:elevation="4dp"
+        android:gravity="center">
+
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textColor="@color/bleuDarkCTM"
+            android:textStyle="bold"
+            android:layout_marginRight="2dp"
+            android:layout_marginLeft="10dp"
+              android:textSize="12sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="12/02/17"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuDarkCTM"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="ville"/>
+
+
+        <ImageView
+            android:id="@+id/arrows"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:tint="@color/bleuDarkCTM"/>
+
+
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuDarkCTM"
+            android:layout_gravity="center"
+
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="ville"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bleuDarkCTM"
+        android:elevation="4dp"
+        android:padding="8dp">
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/heure_depart"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+
+            android:padding="4dp"
+
+            android:gravity="center"
+            android:text="Départ"/>
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/heure_arrivee"
+
+            android:padding="4dp"
+
+            android:gravity="center"
+            android:layout_width="85dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Arrivée"/>
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/prix"
+            android:padding="4dp"
+
+            android:gravity="center"
+
+            android:layout_width="80dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Prix (DH)"/>
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/info"
+            android:layout_weight="1"
+            android:padding="4dp"
+
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Info"/>
+    </LinearLayout>
+    <ListView
+        android:id="@+id/list_times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:id="@+id/bar_titles_info"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/bleuDarkCTM"
+        android:elevation="4dp"
+        android:padding="8dp">
+        <com.stanly.ram.Widgets.AutoResizeTextView
+
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+              android:layout_weight="1"
+            android:padding="4dp"
+
+            android:gravity="center"
+            android:text="Points Arrêt"/>
+        <com.stanly.ram.Widgets.AutoResizeTextView
+
+            android:layout_weight="1"
+            android:padding="4dp"
+
+            android:gravity="center"
+            android:layout_width="85dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Nature"/>
+        <com.stanly.ram.Widgets.AutoResizeTextView
+
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:layout_width="80dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Durée"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/titles_info"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="8dp">
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/point_arret"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuCTM1"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:padding="4dp"
+
+            android:gravity="center"
+           />
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/nature"
+            android:layout_weight="1"
+            android:padding="4dp"
+
+            android:gravity="center"
+            android:layout_width="85dp"
+            android:textColor="@color/bleuCTM1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Nature"/>
+        <com.stanly.ram.Widgets.AutoResizeTextView
+            android:id="@+id/duree"
+            android:padding="4dp"
+            android:layout_weight="1"
+            android:gravity="center"
+
+            android:layout_width="80dp"
+            android:textColor="@color/bleuCTM1"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:text="Durée"/>
+
+    </LinearLayout>
+</LinearLayout>

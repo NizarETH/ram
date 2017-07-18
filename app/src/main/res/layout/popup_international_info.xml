@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bleuDarkCTM"
+        android:orientation="horizontal"
+     android:padding="4dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:tint="@color/white"
+            android:src="@drawable/info_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Information"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp"
+            android:gravity="center"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shape_rounded_corners"
+            android:layout_height="wrap_content"
+            android:src="@drawable/board"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"><TextView
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuDarkCTM"
+            android:textStyle="bold"
+            android:padding="4dp"
+
+            android:gravity="left"
+            android:text="Départ : "/>
+            <TextView
+                android:id="@+id/info_depart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black1"
+
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="..."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"><TextView
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuDarkCTM"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:layout_width="140dp"
+            android:gravity="left"
+            android:text="Embarquement : "/>
+            <TextView
+                android:id="@+id/info_board"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black1"
+
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="..."/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+            <TextView
+
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuDarkCTM"
+            android:textStyle="bold"
+            android:padding="4dp"
+             android:layout_width="140dp"
+            android:gravity="left"
+            android:text="Arrivée : "/>
+            <TextView
+                android:id="@+id/info_arrivee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black1"
+
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="..."/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

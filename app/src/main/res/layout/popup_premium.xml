@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bleuDarkCTM"
+        android:orientation="horizontal"
+     android:padding="4dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"
+            android:tint="@color/white"
+            android:src="@drawable/prem_ctm"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="Premium"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_margin="4dp"
+            android:gravity="center"/>
+        
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="6dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/shape_rounded_corners"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ctm_prem2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bleuDarkCTM"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="Des autocars luxueux, un confort absolu, un service irréprochable, tout a bien été véhiculé à CTM! Faites l’expérience d’un voyage alliant confort, sécurité et plaisir. "/>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+             >
+         <ScrollView
+             android:id="@+id/scroll_data"
+    android:layout_width="match_parent"
+    android:layout_height="120dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black1"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Avec le service Premium de CTM, vous disposez d’une multitude d’avantages pour voyager dans les meilleures conditions :
+
+Opter pour CTM Premium, c’est voyager sans escale avec des départs en aller retour chaque jour via autoroute dans le plus grand confort pour relier directement Casablanca, Rabat, Agadir, Marrakech, Fès, Tanger, Tétouan, Oujda, Beni mellal et Safi.
+"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/black1"
+            android:text="Sièges très confortables avec tablettes et repose-jambes conçus spécialement pour vous offrir une détente et un confort optimaux ;"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/black1"
+            android:text="Climatisation et lumière personnalisées pour illuminer vos lectures et maîtriser la température de votre voyage ;"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/black1"
+            android:text=" Journaux, collations et boissons pour rendre votre voyage plus agréable ;"/>
+               <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+                   android:layout_marginRight="10dp"
+                   android:layout_marginLeft="10dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/black1"
+            android:text="Wifi à l’intérieur de l’autocar pour que vous restiez connecté tout au long de votre voyage ;"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/black1"
+            android:text=" Salon premium dans un autocar encore plus spacieux ;"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@color/lightgrey"
+            android:textColor="@color/black1"
+            android:text="Plus d’espace dans l’autocar."/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+    </LinearLayout>
+</ScrollView>
+         <LinearLayout
+             android:id="@+id/hidden_data"
+             android:layout_below="@id/scroll_data"
+             android:layout_width="match_parent"
+             android:layout_height="35dp"
+             android:layout_marginTop="-30dp"
+             android:layout_marginRight="4dp"
+             android:layout_marginLeft="4dp"
+             android:layout_marginBottom="-8dp"
+
+             android:alpha="0.7"
+             android:background="@color/soft_grey"
+             android:gravity="center">
+         <ImageView
+android:layout_marginBottom="3dp"
+
+             android:layout_width="25dp"
+             android:tint="@color/white"
+             android:layout_height="25dp"
+             android:src="@drawable/arrow_down_white"/>
+         </LinearLayout>
+     </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

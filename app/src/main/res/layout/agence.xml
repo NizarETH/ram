@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+    <com.stanly.ram.Widgets.AutoResizeTextView
+        android:id="@+id/agence_name"
+        android:textColor="@color/bleuDarkCTM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_weight="0.2"
+        android:text="casa"/>
+    <com.stanly.ram.Widgets.AutoResizeTextView
+        android:layout_weight="0.8"
+
+        android:layout_margin="4dp"
+        android:textSize="16sp"
+        android:id="@+id/agence_address"
+        android:layout_width="wrap_content"
+        android:textColor="@color/bleuCTM1"
+        android:layout_height="wrap_content"
+        android:text="addresse"/>
+
+</LinearLayout>

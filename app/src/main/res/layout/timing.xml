@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/bleuDarkCTM"
+        android:text="Horaires"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@color/bleuDarkCTM"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+   >
+
+    <ImageView
+        android:padding="50dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    />
+</RelativeLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_gravity="center"
+     android:paddingRight="25dp"
+     android:paddingLeft="25dp"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp">
+        <TextView
+            android:text="De :"
+            android:padding="5dp"
+            android:textSize="18sp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="@color/bleuDarkCTM"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center">
+            <TextView
+                android:text="A :"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:textColor="@color/bleuDarkCTM"
+
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center">
+            <ImageView
+                android:paddingTop="5dp"
+                android:tint="@color/bleuDarkCTM"
+                android:src="@drawable/agenda"
+                android:layout_width="30dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/from"
+            android:hint="Ville départ"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@null"
+            android:textColor = "@color/bleuDarkCTM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="@color/white"/>
+
+
+        <AutoCompleteTextView
+            android:id="@+id/to"
+            android:hint="Ville d'arrivée"
+            android:textColor = "@color/bleuDarkCTM"
+            android:layout_width="match_parent"
+            android:textCursorDrawable="@null"
+            android:layout_height="wrap_content"
+            android:popupBackground="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <!-- INPUT -->
+            <EditText
+                android:id="@+id/agendaEdit"
+                android:text=""
+                android:hint=" JJ/MM/AAAA"
+                android:padding="10dp"
+                android:textCursorDrawable="@null"
+                android:textColor = "@color/bleuDarkCTM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <CheckedTextView
+            android:id="@+id/today"
+            android:theme="@style/checkBoxStyle"
+            android:gravity="center"
+              android:checked="true"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:textStyle="bold"
+            android:textColor="@color/bleuDarkCTM"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Aujourd'hui" />
+        <CheckedTextView
+            android:id="@+id/tomorrow"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:theme="@style/checkBoxStyle"
+            android:textColor="@color/bleuDarkCTM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:text="Demain" />
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center">
+    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/national"
+        android:theme="@style/checkBoxStyle"
+        android:paddingRight="7dp"
+        android:textStyle="bold"
+        android:textColor="@color/bleuDarkCTM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkMark="@null"
+        android:checked="true"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:drawableLeft="?android:attr/listChoiceIndicatorSingle"
+        android:drawableRight="@null"
+        android:text="National"
+        />
+    <CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/international"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:checkMark="@null"
+        android:theme="@style/checkBoxStyle"
+        android:checked="false"
+        android:gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:drawableLeft="?android:attr/listChoiceIndicatorSingle"
+        android:drawableRight="@null"
+        android:textStyle="bold"
+        android:textColor="@color/bleuDarkCTM"
+        android:text="International"
+        />
+</LinearLayout>
+    <Button
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id="@+id/search"
+        android:text="Rechercher"
+        android:background="@color/bleuDarkCTM"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
